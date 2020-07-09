@@ -30,4 +30,11 @@
 
     <string name="editar_datos">Editar Datos</string>
 
+    <!--PARAMETROS-->
+    <string name="pNombres">nombre</string>
+    <string name="pFecha">fecha</string>
+    <string name="pTelefono">telefono</string>
+    <string name="pEmail">email</string>
+    <string name="pDescripcion">descripcion</string>
+
 </resources>

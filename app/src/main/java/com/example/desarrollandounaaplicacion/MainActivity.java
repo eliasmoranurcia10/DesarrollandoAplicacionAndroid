@@ -10,6 +10,7 @@ import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -64,8 +65,17 @@ public class MainActivity extends AppCompatActivity {
     public void PresionarSiguiente(View view){
         Intent intent = new Intent(MainActivity.this,ConfirmarDatos.class);
 
+        EditText edtNombre              = (EditText) findViewById(R.id.edtNombre);
+        EditText edtFecha               = (EditText) findViewById(R.id.edtFecha);
+        EditText edtTelefono            = (EditText) findViewById(R.id.edtTelefono);
+        EditText edtEmail               = (EditText) findViewById(R.id.edtEmail);
+        EditText edtDescripcionContacto = (EditText) findViewById(R.id.edtDescripcionContacto);
 
-
+        intent.putExtra(getResources().getString(R.string.pNombres),edtNombre.getText().toString());
+        intent.putExtra(getResources().getString(R.string.pFecha),edtFecha.getText().toString());
+        intent.putExtra(getResources().getString(R.string.pTelefono), edtTelefono.getText().toString());
+        intent.putExtra(getResources().getString(R.string.pEmail),edtEmail.getText().toString());
+        intent.putExtra(getResources().getString(R.string.pDescripcion),edtDescripcionContacto.getText().toString());
 
         startActivity(intent);
         finish();
