@@ -19,6 +19,7 @@
         android:layout_marginBottom="@dimen/margen_abajo"
         android:textSize="@dimen/tamanio_texto"
         android:textColor="@color/colorAzul"
+        android:singleLine="true"
         />
 
     <EditText
@@ -34,6 +35,7 @@
         android:layout_marginBottom="@dimen/margen_abajo"
         android:textSize="@dimen/tamanio_texto"
         android:textColor="@color/colorAzul"
+        android:singleLine="true"
         />
 
     <EditText
@@ -42,12 +44,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margen_abajo"
         android:hint="@string/telefono"
-        android:inputType="number"
+        android:inputType="number|phone"
         android:text="@string/fecha_usuario"
-        android:textStyle="italic"
-        android:textSize="@dimen/tamanio_texto"
         android:textColor="@color/colorAzul"
-        />
+        android:textSize="@dimen/tamanio_texto"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/edtEmail"
@@ -59,6 +60,7 @@
         android:textStyle="italic"
         android:textSize="@dimen/tamanio_texto"
         android:textColor="@color/colorAzul"
+        android:singleLine="true"
         />
 
     <TextView
@@ -82,6 +84,8 @@
         android:textStyle="italic"
         android:textSize="@dimen/tamanio_texto"
         android:textColor="@color/colorAzul"
+        android:maxLines="4"
+        android:singleLine="true"
         />
 
     <Button
