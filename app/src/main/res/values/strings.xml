@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">DesarrollandounaAplicacion</string>
+    <string name="app_name">Screen Title</string>
+
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="nombre_usuario"> </string>
+
+    <string name="pick_time">Fecha de Nacimiento</string>
 </resources>
