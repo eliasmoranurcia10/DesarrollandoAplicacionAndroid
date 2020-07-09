@@ -11,6 +11,7 @@ import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
@@ -27,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-
 
 
     public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener{
@@ -47,12 +47,15 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onDateSet(DatePicker datePicker, int year, int month, int day) {
             //Hacer algunas cosas con la fecha elegida por el usuario
+            String fecha = Integer.toString(month+1)+"/"+Integer.toString(day)+"/"+Integer.toString(year);
+            ((EditText) getActivity().findViewById(R.id.edtFecha)).setText(fecha);
         }
     }
 
-    public void showTimePickerDialog(View v){
+    public void showDatePickerDialog(View v){
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(),"datePicker");
+
 
     }
 
