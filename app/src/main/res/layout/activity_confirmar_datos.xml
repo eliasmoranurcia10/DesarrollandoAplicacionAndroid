@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/relleno_pantalla"
+    tools:context=".ConfirmarDatos">
+
+    <TextView
+        android:id="@+id/tvConfirmarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/confirmar_datos"
+        app:fontFamily="casual"
+        android:textSize="@dimen/texto_titulo"
+        android:textColor="@color/colorNegro"
+        android:textStyle="bold"
+        tools:ignore="SpUsage"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+
+    <TextView
+        android:id="@+id/tvNombre_contacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_nombre"
+        app:fontFamily="casual"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+
+    <TextView
+        android:id="@+id/tvFechaNacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_fecha"
+        app:fontFamily="casual"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_telefono"
+        app:fontFamily="casual"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_email"
+        app:fontFamily="casual"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+    
+    <TextView
+        android:id="@+id/tvCorfimDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_descripcion"
+        app:fontFamily="casual"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_datos"
+        android:theme="@style/MiBotonRaised"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:onClick="PresionarEditarDatos"
+        />
+
+
+</LinearLayout>

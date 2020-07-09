@@ -18,4 +18,16 @@
     <string name="descripcion_contacto"> </string>
 
     <string name="siguiente">Siguiente</string>
+
+    <!--SEGUNDO LAYOUT-->
+
+    <string name="confirmar_datos" >Confirmar Datos</string>
+    <string name="confirmar_nombre">Elias Moran Urcia</string>
+    <string name="confirmar_fecha">Fecha de Nacimiento: 10/8/1998</string>
+    <string name="confirmar_telefono">Tel: 933212236</string>
+    <string name="confirmar_email">Email: yoexerelias@gmail.com</string>
+    <string name="confirmar_descripcion">Descripción: Estudio Ingenieria de Sistemas en Perú</string>
+
+    <string name="editar_datos">Editar Datos</string>
+
 </resources>

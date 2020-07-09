@@ -94,6 +94,8 @@
         android:layout_height="wrap_content"
         android:text="@string/siguiente"
         android:theme="@style/MiBotonRaised"
+        android:onClick="PresionarSiguiente"
         />
+
 
 </LinearLayout>
