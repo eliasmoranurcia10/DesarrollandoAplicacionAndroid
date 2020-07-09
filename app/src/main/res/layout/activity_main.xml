@@ -16,6 +16,9 @@
         android:cursorVisible="false"
         android:hint="@string/nombre_completo"
         android:text="@string/nombre_usuario"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorAzul"
         />
 
     <EditText
@@ -23,12 +26,70 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/pick_time"
+        android:text="@string/fecha_usuario"
         android:textStyle="italic"
         android:focusable="false"
         android:clickable="true"
         android:onClick="showDatePickerDialog"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorAzul"
         />
 
+    <EditText
+        android:id="@+id/edtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:hint="@string/telefono"
+        android:inputType="number"
+        android:text="@string/fecha_usuario"
+        android:textStyle="italic"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorAzul"
+        />
 
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:hint="@string/email"
+        android:text="@string/email_usuario"
+        android:textStyle="italic"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorAzul"
+        />
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:text="@string/descripcion"
+        android:textStyle="italic|bold"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorNegro"
+        />
+
+    <EditText
+        android:id="@+id/edtDescripcionContacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margen_abajo"
+        android:hint="@string/desc"
+        android:text="@string/descripcion_contacto"
+        android:textStyle="italic"
+        android:textSize="@dimen/tamanio_texto"
+        android:textColor="@color/colorAzul"
+        />
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/siguiente"
+        android:theme="@style/MiBotonRaised"
+        />
 
 </LinearLayout>

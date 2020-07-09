@@ -5,4 +5,17 @@
     <string name="nombre_usuario"> </string>
 
     <string name="pick_time">Fecha de Nacimiento</string>
+    <string name="fecha_usuario"> </string>
+
+    <string name="telefono">Teléfono</string>
+    <string name="telefono_usuario"> </string>
+
+    <string name="email">E-mail</string>
+    <string name="email_usuario"> </string>
+
+    <string name="descripcion">Descripción del Contacto</string>
+    <string name="desc">Descripción</string>
+    <string name="descripcion_contacto"> </string>
+
+    <string name="siguiente">Siguiente</string>
 </resources>

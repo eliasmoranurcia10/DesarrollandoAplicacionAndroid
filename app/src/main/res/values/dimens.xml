@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="relleno_pantalla">20dp</dimen>
-    <dimen name="margen_abajo">18dp</dimen>
+    <dimen name="relleno_pantalla">30dp</dimen>
+    <dimen name="margen_abajo">30dp</dimen>
+    <dimen name="tamanio_texto">20dp</dimen>
+    <dimen name="radio_boton">20dp</dimen>
 </resources>
