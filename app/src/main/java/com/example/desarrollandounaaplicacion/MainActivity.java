@@ -16,6 +16,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.text.DateFormat;
 import java.util.Calendar;
@@ -71,14 +72,19 @@ public class MainActivity extends AppCompatActivity {
         EditText edtEmail               = (EditText) findViewById(R.id.edtEmail);
         EditText edtDescripcionContacto = (EditText) findViewById(R.id.edtDescripcionContacto);
 
-        intent.putExtra(getResources().getString(R.string.pNombres),edtNombre.getText().toString());
-        intent.putExtra(getResources().getString(R.string.pFecha),edtFecha.getText().toString());
-        intent.putExtra(getResources().getString(R.string.pTelefono), edtTelefono.getText().toString());
-        intent.putExtra(getResources().getString(R.string.pEmail),edtEmail.getText().toString());
-        intent.putExtra(getResources().getString(R.string.pDescripcion),edtDescripcionContacto.getText().toString());
+        if((!edtNombre.getText().toString().equals("")) && (!edtFecha.getText().toString().equals("")) && (!edtTelefono.getText().toString().equals("")) && (!edtEmail.getText().toString().equals("")) && (!edtDescripcionContacto.getText().toString().equals(""))) {
+            intent.putExtra(getResources().getString(R.string.pNombres), edtNombre.getText().toString());
+            intent.putExtra(getResources().getString(R.string.pFecha), edtFecha.getText().toString());
+            intent.putExtra(getResources().getString(R.string.pTelefono), edtTelefono.getText().toString());
+            intent.putExtra(getResources().getString(R.string.pEmail), edtEmail.getText().toString());
+            intent.putExtra(getResources().getString(R.string.pDescripcion), edtDescripcionContacto.getText().toString());
 
-        startActivity(intent);
-        finish();
+            startActivity(intent);
+            finish();
+        } else {
+            Toast.makeText(getBaseContext(), getResources().getString(R.string.mensaje_precaucion) ,Toast.LENGTH_LONG).show();
+        }
+
     }
 
 }

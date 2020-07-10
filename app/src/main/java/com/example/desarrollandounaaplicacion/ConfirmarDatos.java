@@ -15,6 +15,12 @@ public class ConfirmarDatos extends AppCompatActivity {
     private TextView tvEmail;
     private TextView tvCorfimDescripcion;
 
+    private String nombre_contacto;
+    private String fecha_contacto;
+    private String tel_contacto;
+    private String email_contacto;
+    private String desc_contacto;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +29,11 @@ public class ConfirmarDatos extends AppCompatActivity {
 
         Bundle parametros = getIntent().getExtras();
 
-        String nombre_contacto = parametros.getString(getResources().getString(R.string.pNombres));
-        String fecha_contacto = parametros.getString(getResources().getString(R.string.pFecha));
-        String tel_contacto = parametros.getString(getResources().getString(R.string.pTelefono));
-        String email_contacto = parametros.getString(getResources().getString(R.string.pEmail));
-        String desc_contacto = parametros.getString(getResources().getString(R.string.pDescripcion));
+        nombre_contacto = parametros.getString(getResources().getString(R.string.pNombres));
+        fecha_contacto = parametros.getString(getResources().getString(R.string.pFecha));
+        tel_contacto = parametros.getString(getResources().getString(R.string.pTelefono));
+        email_contacto = parametros.getString(getResources().getString(R.string.pEmail));
+        desc_contacto = parametros.getString(getResources().getString(R.string.pDescripcion));
 
         tvNombre_contacto = (TextView) findViewById(R.id.tvNombre_contacto);
         tvFechaNacimiento = (TextView) findViewById(R.id.tvFechaNacimiento);
@@ -51,6 +57,10 @@ public class ConfirmarDatos extends AppCompatActivity {
 
     public void PresionarEditarDatos(View view){
         Intent intent = new Intent(ConfirmarDatos.this, MainActivity.class);
+
+
+
+
 
         startActivity(intent);
         finish();

@@ -37,4 +37,7 @@
     <string name="pEmail">email</string>
     <string name="pDescripcion">descripcion</string>
 
+    <!--Mensaje cuando se dejen vacios los EditText-->
+    <string name="mensaje_precaucion">Por favor, Ingrese todos sus datos</string>
+
 </resources>
