@@ -58,9 +58,11 @@ public class ConfirmarDatos extends AppCompatActivity {
     public void PresionarEditarDatos(View view){
         Intent intent = new Intent(ConfirmarDatos.this, MainActivity.class);
 
-
-
-
+        intent.putExtra(getResources().getString(R.string.paramNombres),nombre_contacto);
+        intent.putExtra(getResources().getString(R.string.paramFecha),fecha_contacto);
+        intent.putExtra(getResources().getString(R.string.paramTelefono),tel_contacto);
+        intent.putExtra(getResources().getString(R.string.paramEmail),email_contacto);
+        intent.putExtra(getResources().getString(R.string.paramDescripcion),desc_contacto);
 
         startActivity(intent);
         finish();

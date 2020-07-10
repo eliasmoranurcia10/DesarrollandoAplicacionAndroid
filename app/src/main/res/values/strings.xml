@@ -36,6 +36,12 @@
     <string name="pTelefono">telefono</string>
     <string name="pEmail">email</string>
     <string name="pDescripcion">descripcion</string>
+    <!--SEGUNDOS PARAMETROS-->
+    <string name="paramNombres">pnombre</string>
+    <string name="paramFecha">pfecha</string>
+    <string name="paramTelefono">ptelefono</string>
+    <string name="paramEmail">pemail</string>
+    <string name="paramDescripcion">pdescripcion</string>
 
     <!--Mensaje cuando se dejen vacios los EditText-->
     <string name="mensaje_precaucion">Por favor, Ingrese todos sus datos</string>

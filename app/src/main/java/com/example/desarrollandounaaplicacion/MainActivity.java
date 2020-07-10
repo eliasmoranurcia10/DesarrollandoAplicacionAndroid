@@ -25,11 +25,36 @@ import static java.security.AccessController.getContext;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        try {
+            Bundle parametros = getIntent().getExtras();
+
+            String nombreContacto = parametros.getString(getResources().getString(R.string.paramNombres));
+            String fechaNacimiento = parametros.getString(getResources().getString(R.string.paramFecha));
+            String telContacto = parametros.getString(getResources().getString(R.string.paramTelefono));
+            String emailContacto = parametros.getString(getResources().getString(R.string.paramEmail));
+            String descContanto = parametros.getString(getResources().getString(R.string.paramDescripcion));
+
+            EditText edtNombre = (EditText) findViewById(R.id.edtNombre);
+            EditText edtFecha = (EditText) findViewById(R.id.edtFecha);
+            EditText edtTelefono = (EditText) findViewById(R.id.edtTelefono);
+            EditText edtEmail = (EditText) findViewById(R.id.edtEmail);
+            EditText edtDescripcionContacto = (EditText) findViewById(R.id.edtDescripcionContacto);
+
+            edtNombre.setText(nombreContacto);
+            edtFecha.setText(fechaNacimiento);
+            edtTelefono.setText(telContacto);
+            edtEmail.setText(emailContacto);
+            edtDescripcionContacto.setText(descContanto);
+        } catch (Exception e){
+            //No se realizará ninguna acción, cuando no es llamado por otra actividad
+        }
     }
 
 
